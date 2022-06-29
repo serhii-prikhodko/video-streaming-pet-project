@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-let exampleVideoURL = URL(string: "https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_640_3MG.mp4")!
+let exampleVideoURL = URL(string: "https://www.sample-videos.com/video123/mp4/720/big_buck_bunny_720p_2mb.mp4")!
 
 let exampleImageURL = URL(string: "https://picsum.photos/300/100")!
 let exampleImageURL2 = URL(string: "https://picsum.photos/300/101")!
@@ -28,88 +28,109 @@ let exampleTrailers = [exampleTrailer1, exampleTrailer2, exampleTrailer3]
 let exampleMovie1 = Movie(id: UUID().uuidString,
                           name: "Dark",
                           thumbnailURL: URL(string: "https://picsum.photos/200/300")!,
-                          categoies: ["Dystopian", "Exciting", "Suspenseful", "Sci-Fi TV"],
+                          categories: ["Dystopian", "Exciting", "Suspenseful", "Sci-Fi TV"],
                           year: 2020,
                           rating: "TV-MA",
                           numberOfSeasons: 3,
+                          accentColor: Color.blue,
                           defaultEpisodeInfo: exampleEpisodeInfo1,
                           creators: "Baran bo Odar,Jantje Friese",
                           cast: "Louis Hofmann,Oliver Masucci,Jördis Triebel",
                           moreLikeThisMovies: [exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6, exampleMovie7],
                           episodes: allExampleEpisodes,
                           promotionHeadline: "New episodes coming soon",
-                          trailers: exampleTrailers)
+                          trailers: exampleTrailers,
+                          previewImageName: "arrestedDevPreview",
+                          previewVideoURL: exampleVideoURL)
 let exampleMovie2 = Movie(id: UUID().uuidString,
                           name: "Office",
                           thumbnailURL: URL(string: "https://picsum.photos/200/301")!,
-                          categoies: ["Dystopian", "Exciting", "Suspenseful", "Sci-Fi TV"],
+                          categories: ["Dystopian", "Exciting", "Suspenseful", "Sci-Fi TV"],
                           year: 2004,
                           rating: "TV-MA",
                           numberOfSeasons: 9,
+                          accentColor: Color.green,
                           defaultEpisodeInfo: exampleEpisodeInfo1,
                           creators: "Baran bo Odar,Jantje Friese",
                           cast: "Louis Hofmann,Oliver Masucci,Jördis Triebel",
                           moreLikeThisMovies: [],
-                          trailers: exampleTrailers)
+                          trailers: exampleTrailers,
+                          previewImageName: "darkPreview",
+                          previewVideoURL: exampleVideoURL)
 let exampleMovie3 = Movie(id: UUID().uuidString,
                           name: "Don't look up",
                           thumbnailURL: URL(string: "https://picsum.photos/201/300")!,
-                          categoies: ["Dystopian", "Exciting", "Suspenseful", "Sci-Fi TV"],
+                          categories: ["Dystopian", "Exciting", "Suspenseful", "Sci-Fi TV"],
                           year: 2021,
                           rating: "TV-MA",
+                          accentColor: Color.gray,
                           defaultEpisodeInfo: exampleEpisodeInfo1,
                           creators: "Baran bo Odar,Jantje Friese",
                           cast: "Louis Hofmann,Oliver Masucci,Jördis Triebel",
                           moreLikeThisMovies: [],
-                          trailers: exampleTrailers)
+                          trailers: exampleTrailers,
+                          previewImageName: "dirtyJohnPreview",
+                          previewVideoURL: exampleVideoURL)
 let exampleMovie4 = Movie(id: UUID().uuidString,
                           name: "Rambo",
                           thumbnailURL: URL(string: "https://picsum.photos/200/302")!,
-                          categoies: ["Dystopian", "Exciting", "Suspenseful", "Sci-Fi TV"],
+                          categories: ["Dystopian", "Exciting", "Suspenseful", "Sci-Fi TV"],
                           year: 1981,
                           rating: "TV-MA",
+                          accentColor: Color.red,
                           defaultEpisodeInfo: exampleEpisodeInfo1,
                           creators: "Baran bo Odar,Jantje Friese",
                           cast: "Louis Hofmann,Oliver Masucci,Jördis Triebel",
                           moreLikeThisMovies: [],
-                          trailers: exampleTrailers)
+                          trailers: exampleTrailers,
+                          previewImageName: "ozarkPreview",
+                          previewVideoURL: exampleVideoURL)
 let exampleMovie5 = Movie(id: UUID().uuidString,
                           name: "Breacking bad",
                           thumbnailURL: URL(string: "https://picsum.photos/201/301")!,
-                          categoies: ["Dystopian", "Exciting", "Suspenseful", "Sci-Fi TV"],
+                          categories: ["Dystopian", "Exciting", "Suspenseful", "Sci-Fi TV"],
                           year: 2007,
                           rating: "TV-MA",
+                          accentColor: Color.yellow,
                           defaultEpisodeInfo: exampleEpisodeInfo1,
                           creators: "Baran bo Odar,Jantje Friese",
                           cast: "Louis Hofmann,Oliver Masucci,Jördis Triebel",
                           moreLikeThisMovies: [],
-                          trailers: exampleTrailers)
+                          trailers: exampleTrailers,
+                          previewImageName: "travelersPreview",
+                          previewVideoURL: exampleVideoURL)
 let exampleMovie6 = Movie(id: UUID().uuidString,
                           name: "Fargo",
                           thumbnailURL: URL(string: "https://picsum.photos/201/302")!,
-                          categoies: ["Dystopian", "Exciting", "Suspenseful", "Sci-Fi TV"],
+                          categories: ["Dystopian", "Exciting", "Suspenseful", "Sci-Fi TV"],
                           year: 2014,
                           rating: "TV-MA",
                           numberOfSeasons: 3,
+                          accentColor: Color.orange,
                           defaultEpisodeInfo: exampleEpisodeInfo1,
                           creators: "Baran bo Odar,Jantje Friese",
                           cast: "Louis Hofmann,Oliver Masucci,Jördis Triebel",
                           moreLikeThisMovies: [],
                           promotionHeadline: "Watch season 3 now",
-                          trailers: exampleTrailers)
+                          trailers: exampleTrailers,
+                          previewImageName: "whiteLinesPreview",
+                          previewVideoURL: exampleVideoURL)
 let exampleMovie7 = Movie(id: UUID().uuidString,
                           name: "Fargo",
                           thumbnailURL: URL(string: "https://picsum.photos/201/302")!,
-                          categoies: ["Dystopian", "Exciting", "Suspenseful", "Sci-Fi TV"],
+                          categories: ["Dystopian", "Exciting", "Suspenseful", "Sci-Fi TV"],
                           year: 2014,
                           rating: "TV-MA",
                           numberOfSeasons: 3,
+                          accentColor: Color.purple,
                           defaultEpisodeInfo: exampleEpisodeInfo1,
                           creators: "Baran bo Odar,Jantje Friese",
                           cast: "Louis Hofmann,Oliver Masucci,Jördis Triebel",
                           moreLikeThisMovies: [],
                           promotionHeadline: "Watch season 3 now",
-                          trailers: exampleTrailers)
+                          trailers: exampleTrailers,
+                          previewImageName: "ozarkPreview",
+                          previewVideoURL: exampleVideoURL)
 
 var exampleMovies: [Movie] {
     return [exampleMovie1, exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6].shuffled()
@@ -178,5 +199,11 @@ extension String {
         let size = self.size(withAttributes: fontAttributes)
         
         return size.width
+    }
+}
+
+extension View {
+    func hideKeyboard() {
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
 }

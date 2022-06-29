@@ -6,15 +6,25 @@
 //
 
 import SwiftUI
+import VideoPlayer
 
 struct TrailerPlayerView: View {
+    
+    var videoURL: URL?
+    
+    @Binding var playVideo: Bool
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        if let videoURL = videoURL {
+            VideoPlayer(url: videoURL, play: $playVideo)
+        } else {
+            Text("Could not load the video")
+        }
     }
 }
 
 struct TrailerPlayerView_Previews: PreviewProvider {
     static var previews: some View {
-        TrailerPlayerView()
+        TrailerPlayerView(playVideo: .constant(true))
     }
 }

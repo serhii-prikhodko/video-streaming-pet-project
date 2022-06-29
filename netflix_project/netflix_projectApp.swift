@@ -11,7 +11,7 @@ import SwiftUI
 struct netflix_projectApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabBarView()
         }
     }
 }

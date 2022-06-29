@@ -8,13 +8,32 @@
 import SwiftUI
 
 struct NotificationBar: View {
+    
+    @Binding var showNotificationList: Bool
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button(action: {
+            // Show notification list
+        }, label: {
+            HStack {
+                Image(systemName: "bell")
+                Text("Notifications")
+                Spacer()
+                Image(systemName: "chevron.right")
+            }
+            .font(.system(size: 18, weight: .bold))
+        })
+        .foregroundColor(.white)
+        .padding()
     }
 }
 
 struct NotificationBar_Previews: PreviewProvider {
     static var previews: some View {
-        NotificationBar()
+        ZStack {
+            Color.black
+                .edgesIgnoringSafeArea(.all)
+            NotificationBar(showNotificationList: .constant(false))
+        }
     }
 }

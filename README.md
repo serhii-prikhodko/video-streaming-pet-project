@@ -1,7 +1,8 @@
 # video-streaming-pet-project
 Learning project on SwiftUI. Clone of Netflix iOS app.
 
-<h3>Goal</h3>: build application with modern UI using SwiftUI approach.
+<h3>Goal</h3>
+Build application with modern UI using SwiftUI approach.
 
 <h3>App screens</h3>
 ![Simulator Screen Shot - iPhone 11 - 2022-06-29 at 12 52 55](https://user-images.githubusercontent.com/46839542/176408569-15bc54e9-48da-423a-8004-b2f8b8908953.png)

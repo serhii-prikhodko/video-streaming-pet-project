@@ -44,7 +44,7 @@ struct SearchBar: View {
                                 }
                                 .frame(width: 35, height: 35)
                         })
-                            .padding(.trailing, 18)
+                            .padding(.trailing, 5)
                     } else {
                         Button(action: {
                             text = ""
@@ -53,7 +53,7 @@ struct SearchBar: View {
                                 .foregroundColor(.graySearchText)
                                 .frame(width: 35, height: 35)
                         })
-                            .padding(.trailing, 18)
+                            .padding(.trailing, 5)
                     }
                 }
                 if isEditing {

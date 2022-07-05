@@ -36,7 +36,7 @@ struct MovieDetail: View {
                     ScrollView(.vertical, showsIndicators: false) {
                         VStack {
                             StandartHomeMovie(movie: movie)
-                                .frame(width: screen.width / 2.5)
+                                .frame(width: screen.width / 2.5, height: 200)
                             MovieInfoSubheadline(movie: movie)
                             if let promotionHeadline = movie.promotionHeadline{
                                 Text(promotionHeadline)
